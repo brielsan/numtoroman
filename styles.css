@@ -41,17 +41,18 @@ span {
 
 #inputc {
   text-align: center;
-  cursor: text;
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::-webkit-input-placeholder {
   font-size: 2.5vh;
-  transition: opacity 0.2s linear;
+  cursor: text;
+  transition: 0.2s linear;
   color: gray;
 }
 
-input[type="text"]:focus::placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   opacity: 0;
+  text-align: center;
 }
 
 #boton {
