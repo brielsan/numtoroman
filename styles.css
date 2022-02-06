@@ -41,6 +41,7 @@ span {
 
 #inputc {
   text-align: center;
+  cursor:text;
 }
 
 input[type="text"]::-webkit-input-placeholder {
