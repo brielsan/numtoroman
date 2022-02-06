@@ -1,0 +1,133 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5vh;
+  box-sizing: border-box;
+  cursor: url("cursor.png"), auto;
+}
+body {
+  background-image: url("wallpaperblur.jpg");
+  background-repeat: no-repeat;
+  background-size: 210vh;
+  background-position: center;
+  transition: 0.5s;
+}
+#container {
+  display: flex;
+  height: 88vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  text-shadow: 0px 0px 30px black;
+  transition: 0.5s;
+}
+div,
+span {
+  color: white;
+  text-shadow: 0px 0px 30px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  text-align: center;
+}
+
+#txt {
+  margin-bottom: 1.5vh;
+  text-align: center;
+}
+
+#inputc {
+  text-align: center;
+  cursor: text;
+}
+
+input[type="text"]::placeholder {
+  font-size: 2.5vh;
+  transition: opacity 0.2s linear;
+  color: gray;
+}
+
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+#boton {
+  font-size: 100%;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+button {
+  font-size: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+
+#volver {
+  margin-top: 0.5vh;
+}
+
+#resultadocompleto {
+  display: flex;
+  align-items: flex-start;
+}
+#res {
+  align-self: center;
+}
+#res span {
+  text-shadow: 0px 0px 5px black;
+  text-align: center;
+  font-size: 8vh;
+  cursor: text;
+  animation: animres ease 0.5s alternate;
+}
+
+#rayita span {
+  font-family: Arial;
+  text-shadow: 0px 0px 5px black;
+  font-size: 8vh;
+  cursor: text;
+  animation: animres ease 0.5s alternate;
+  margin-top: -6.3vh;
+  margin-bottom: -1.6vh;
+  user-select: none;
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgb(122, 87, 22);
+  color: white;
+  border: none;
+}
+h1:hover {
+  text-shadow: 0px 0px 40px black;
+}
+div,
+span:hover {
+  text-shadow: 0px 0px 40px black;
+}
+
+footer {
+  color: white;
+  font-size: 2vh;
+  text-align: right;
+  position: relative;
+  top: 8vh;
+  margin-right: 0.5vh;
+  opacity: 50%;
+}
+@keyframes animres {
+  from {
+    color: rgb(139, 112, 62);
+    opacity: 0;
+  }
+  to {
+    color: white;
+    opacity: 1;
+  }
+}

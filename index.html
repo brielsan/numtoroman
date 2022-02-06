@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="romanhelmet2.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>numToROMAN!</title>
+  </head>
+  <body id="body">
+    <div id="container">
+      <h1>numToROMAN!</h1>
+      <div id="aborrar">
+        <span id="txt">Porfavor, ingrese el número a convertir.</span>
+        <input id="inputc" type="text" value="" autocomplete="off"
+        placeholder="Escribe aquí"" />
+        <button id="boton" onclick="transformarNum()">Convertir</button>
+      </div>
+      <div id="resultadocompleto">
+        <div id="rayita"></div>
+        <div id="res"></div>
+      </div>
+      <div id="volver"></div>
+    </div>
+    <script>
+      $("#inputc").keyup(function (e) {
+        if (e.keyCode == 13) {
+          $("#boton").click();
+        }
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#inputc").click(function (evt) {
+          let body = document.getElementById("body");
+          body.style.backgroundSize = "230vh";
+          evt.stopPropagation();
+        });
+        $(document).click(function () {
+          let body = document.getElementById("body");
+          body.style.backgroundSize = "210vh";
+        });
+      });
+    </script>
+    <script src="numromanos.js"></script>
+    <footer>&copy; Gabriel Sanchez</footer>
+  </body>
+</html>
