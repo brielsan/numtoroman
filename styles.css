@@ -7,7 +7,7 @@
 body {
   background-image: url("wallpaperblur.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 230vh;
   background-position: center;
   transition: 0.5s;
 }
