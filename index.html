@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <script>
+      var viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute(
+        "content",
+        viewport.content + ", height=" + window.innerHeight
+      );
+    </script>
     <link rel="icon" href="romanhelmet2.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,11 +42,13 @@
         $("#inputc").click(function (evt) {
           let body = document.getElementById("body");
           body.style.backgroundSize = "230vh";
+          body.style.backgroundImage = 'url("wallpaperblur2.jpg")';
           evt.stopPropagation();
         });
         $(document).click(function () {
           let body = document.getElementById("body");
           body.style.backgroundSize = "210vh";
+          body.style.backgroundImage = 'url("wallpaperblur.jpg")';
         });
       });
     </script>

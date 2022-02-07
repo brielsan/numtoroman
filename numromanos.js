@@ -1,8 +1,3 @@
-function fadeFondo() {
-  let body = document.getElementById("body");
-  body.style.backgroundSize = "150%";
-}
-
 function numeroCompuesto(num) {
   let numArr = num.toString().split("");
   for (let i = 0; i < numArr.length; i++) {
